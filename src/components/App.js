@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import SurveyList from "./SurveyList"
 
 function App(){
   return (
     <React.Fragment>
       <Header />
-      <App />
+      <SurveyList />
     </React.Fragment>
   );
 }
