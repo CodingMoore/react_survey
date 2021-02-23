@@ -10,8 +10,6 @@ function Survey(props){
       <h5>{props.question1}</h5>
       <h5>{props.question2}</h5>
       <h5>{props.question3}</h5>
-      <h5>{props.question4}</h5>
-      <h5>{props.question5}</h5>
       <hr/>
     </React.Fragment>
   );
@@ -23,8 +21,6 @@ Survey.propTypes = {
   question1: PropTypes.string.isRequired,
   question2: PropTypes.string.isRequired,
   question3: PropTypes.string.isRequired,
-  question4: PropTypes.string.isRequired,
-  question5: PropTypes.string.isRequired,
 };
 
 export default Survey;
