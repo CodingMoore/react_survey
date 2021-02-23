@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 // import SurveyList from "./SurveyList";
-// import SurveyControl from "./SurveyControl";
+// import Admin from "./Admin";
 import Admin from './Admin';
 import Client from './Client';
 
@@ -15,7 +15,7 @@ function App(){
       <h3>{question1}</h3>
       <h3>{question2}</h3>
       <h3>{question3}</h3> */}
-      {/* <SurveyControl /> */}
+      {/* <Admin /> */}
       <Admin />
       <Client />
     </React.Fragment>

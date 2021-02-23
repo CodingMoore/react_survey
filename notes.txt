@@ -19,7 +19,20 @@ TO DO:
 
 ----> admin would need to be able to view survey responses as attached to the surveys themselves (presumably as individual survey units, rather than "here's a list of how all 50 people named their favorite snake", because that just seems messy)
 
+functions:
+log in - admin
+✔ create survey - admin
+edit survey - admin
+delete survey - admin
+✔ view surveys - admin
+view/select individual survey 
+view individual survey response - admin
 
+
+log in - client
+✔ view surveys - client
+view/select individual survey - client
+✔ create survey response - client
 
 
 
