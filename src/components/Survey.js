@@ -5,12 +5,14 @@ function Survey(props){
 
   return (
     <React.Fragment>
+      <p>(Survey.js begins here)</p>
       <h3>{props.name}</h3>
       <h4>{props.description}</h4>
       <h5>{props.question1}</h5>
       <h5>{props.question2}</h5>
       <h5>{props.question3}</h5>
       <hr/>
+      <p>(Survey.js ends here)</p>
     </React.Fragment>
   );
 }

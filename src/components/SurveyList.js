@@ -13,7 +13,7 @@ const masterSurveyList = [
     name: "Survey 2",
     description: "A Survey about animal",
     question1: "What is your favorite octopus?",
-    question2: "What is your favorite snake",
+    question2: "What is your favorite snake?",
     question3: "What is your favorite horse?",
     }
 ];

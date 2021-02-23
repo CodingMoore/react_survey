@@ -1,3 +1,32 @@
+TO DO:
+
+- EDIT SURVEY
+- DELETE SURVEY
+- (SAVE SURVEY RESPONSES) -- FIREBASE
+- SELECT SURVEY FROM LIST (USER VS ADMIN)
+--> DETAILS: YES? NO?
+|-----> TURN INTO WHERE THEY ANSWER QUESTIONS?
+
+-- ADMIN TOOLS:
+----> ALL THE SURVEY CREATION/MODIFICATION STUFF
+----> LINKED FROM HEADER, REQUIRES LOGIN (OBVIOUSLY)
+
+-- USER VIEW:
+----> COME TO HOME PAGE, SEE SURVEYS
+----> CLICK ON SURVEY TO ANSWER IT
+----> person taking survey shouldn't need to edit/delete (nobody gets to edit their votes!! suffer.)
+
+
+----> admin would need to be able to view survey responses as attached to the surveys themselves (presumably as individual survey units, rather than "here's a list of how all 50 people named their favorite snake", because that just seems messy)
+
+
+
+
+
+
+
+
+
 // {/* <form onSubmit = {props.formSubmissionHandler}>
 //         <div class="radio">
 //           <label>

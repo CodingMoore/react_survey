@@ -12,6 +12,7 @@ function NewSurveyForm(props) {
   
   return (
     <React.Fragment>
+      <h3>New Survey Form (begins)</h3>
       <ReuseableSurveyForm />
       {/* // name: event.target.name.value,
       // description: event.description.name.value,
@@ -22,7 +23,7 @@ function NewSurveyForm(props) {
       // question5:  */}
       
       
-      <h3></h3>
+      <h3>New Survey Form (ends)</h3>
     </React.Fragment>
 
   );

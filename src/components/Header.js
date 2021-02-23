@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(){
   return (
-    <h1>Survey</h1>
+    <h1>Survey (Header)</h1>
   );
 }
 
