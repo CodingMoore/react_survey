@@ -18,20 +18,20 @@ function ReusableSurveyForm(props) {
         <br />
         <input
         type='text'
-        name='q1'
+        name='question1'
         placeholder='Question 1'/>
         <br />
         <input
         type='text'
-        name='q2'
+        name='question2'
         placeholder='Question 2'/>
         <br />
         <input
         type='text'
-        name='q3'
+        name='question3'
         placeholder='Question 3'/>
         <br />
-        <button type='submit'>{props.buttonText} -- Placeholder Text</button>
+        <button type='submit'>{props.buttonText}Submit Form</button>
       </form>
       <h4>Reusable Survey Form (ends here)</h4>
     </React.Fragment>
