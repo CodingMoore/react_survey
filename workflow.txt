@@ -1,0 +1,58 @@
+npx create-react-app
+npm install --save-exact react-scripts@3.2.0
+
+delete App.css, App.test.js, logo.svg
+
+create components folder in src
+
+move App.js to components folder
+
+fix App.js import statement in index.js if it wasn't updated automatically.
+
+Create Diagram(s)
+
+build out static site (without state). (LESSON 8 React Fundamentals https://www.learnhowtoprogram.com/react/react-fundamentals/building-a-static-site
+)
+
+Plan state
+
+$ npm install redux@4.0.5 react-redux@7.1.3
+
+Set Up Firestore DB
+https://www.learnhowtoprogram.com/react/react-with-nosql/setting-up-a-firebase-project
+
+npm install firebase@7.8.0
+
+add .env file to .gitignore and commit and push.
+
+add .env file and copy in relivant code from firestore. and create the relevant firebase.js file.
+
+npm install react-redux-firebase@3.1.1 redux-firestore@0.12.0
+
+Integrate firestore into src/index.js file etc. Add required import statements and add the 'create store'.
+
+    import { createStore } from 'redux';
+    import { Provider } from 'react-redux';
+    import rootReducer from './reducers/index';
+
+    const store = createStore(rootReducer)
+
+Create rootReducer inside of a src/reducers/index.js file.
+
+    import { firestoreReducer } from 'redux-firestore';
+
+    const rootReducer = combineReducers({
+      firestore: firestoreReducer
+    });
+
+Connect NewSurveyForm to Firbase (if you haven't already)
+
+Connect survey List to firebase instead of fake data.
+
+Connect the Client.js file to firstore (because we need to retreive firstore data in some of our methods)
+
+    import { withFirestore } from "react-redux-firebase";
+
+    export default withFirestore(Client);
+
+Connect AnswerForm to AnswerSurvey and pass down props.  Connect AnswerSurvey to firestore to save data.
