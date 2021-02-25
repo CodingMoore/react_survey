@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function SurveyAnswerForm() {
-  // const { survey } = props;
+function SurveyAnswerForm(props) {
+  const { survey } = props;
   
   return (
     <React.Fragment>
@@ -9,33 +10,37 @@ function SurveyAnswerForm() {
       
       {/* <form onSubmit={props.formsubmissionHandler}> */}
       <form>
-        <label>Question 1: </label>
+        <label>Question 1: {survey.question1}</label>
         <br /> 
         <input type='text' 
         name='answer1' 
         placeholder='ANSWER 1'/>
         <br /> 
         <br /> 
-      <label>Question 2: </label>
+      <label>Question 2: {survey.question2}</label>
       <br /> 
       <input type='text' 
         name='answer2' 
         placeholder='ANSWER 2'/>
         <br /> 
         <br /> 
-      <label>Question 3: </label>
+      <label>Question 3: {survey.question3}</label>
       <br /> 
       <input type='text' 
         name='answer3' 
         placeholder='ANSWER 3'/>
         <br />
         <br />
-      <button type='submit'>-- Placeholder Text</button>
+      <button type='submit'>Submit Answers</button>
       </form>
       <h4>Survey Answer Form (ends here)</h4>
     </React.Fragment>
 
   )
+}
+
+SurveyAnswerForm.propTypes = {
+  survey: PropTypes.object
 }
 
 export default SurveyAnswerForm;
