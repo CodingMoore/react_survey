@@ -20,12 +20,6 @@ class Client extends React.Component {
     }
   }
 
-  
-
-
-
-
-
   handleChangingSelectedSurvey = (id) => {
     this.props.firestore.get({collection: "surveys", doc: id}).then((survey) => {
       const firestoreSurvey = {
