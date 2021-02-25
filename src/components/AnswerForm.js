@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SurveyAnswerForm(props) {
+function AnswerForm(props) {
   const { survey } = props;
-  
   return (
     <React.Fragment>
       <h4>Survey Answer Form (begins here)</h4>
-      
-      {/* <form onSubmit={props.formsubmissionHandler}> */}
-      <form>
+      <form onSubmit={props.formSubmissionHandler}>
         <label>Question 1: {survey.question1}</label>
         <br /> 
         <input type='text' 
@@ -35,12 +32,12 @@ function SurveyAnswerForm(props) {
       </form>
       <h4>Survey Answer Form (ends here)</h4>
     </React.Fragment>
-
-  )
+  );
 }
 
-SurveyAnswerForm.propTypes = {
-  survey: PropTypes.object
+AnswerForm.propTypes = {
+  survey: PropTypes.object,
+  formSubmissionHandler: PropTypes.func
 }
 
-export default SurveyAnswerForm;
+export default AnswerForm;

@@ -24,11 +24,10 @@ function NewSurveyForm() {
     <React.Fragment>
       <h3>New Survey Form (begins)</h3>
       <ReusableSurveyForm 
-      formSubmissionHandler = {addSurveyToFirestore}
+        formSubmissionHandler = {addSurveyToFirestore}
       />
       <h3>New Survey Form (ends)</h3>
     </React.Fragment>
-
   );
 }
 

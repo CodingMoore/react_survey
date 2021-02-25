@@ -31,7 +31,7 @@ function ReusableSurveyForm(props) {
         name='question3'
         placeholder='Question 3'/>
         <br />
-        <button type='submit'>{props.buttonText}Submit Form</button>
+        <button type='submit'>Submit Form</button>
       </form>
       <h4>Reusable Survey Form (ends here)</h4>
     </React.Fragment>
@@ -41,7 +41,6 @@ function ReusableSurveyForm(props) {
 
 ReusableSurveyForm.propTypes = {
   formSubmissionHandler: PropTypes.func,
-  buttonText: PropTypes.string
 };
 
 export default ReusableSurveyForm;

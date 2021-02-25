@@ -1,6 +1,6 @@
 import React from 'react';
 import SurveyList from './SurveyList';
-import SurveyAnswerForm from "./SurveyAnswerForm";
+import AnswerSurvey from "./AnswerSurvey";
 import { connect } from 'react-redux';
 import { withFirestore } from "react-redux-firebase";
 
@@ -47,7 +47,7 @@ class Client extends React.Component {
         <p>Client Block</p>
         <SurveyList 
         onSurveySelection = {this.handleChangingSelectedSurvey}/>;
-        <SurveyAnswerForm 
+        <AnswerSurvey 
         survey = {this.state.selectedSurvey}/>
       </div>
       </>
@@ -55,4 +55,6 @@ class Client extends React.Component {
   }
 }
 
-export default Client;
+
+
+export default withFirestore(Client);
